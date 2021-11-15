@@ -14,6 +14,13 @@ module.exports = {
         HomeSearchInputBorder: "#004185",
         HomeSearchIcon1: "#3198FF",
         HomeSearchIcon2: "#194C80",
+        SeachCoursePlaceholder: "#B9B9B9",
+        NavActiveClass1: "#0177ED",
+        NavActiveClass2: "#004FA0",
+        HomeCoursesBg1: "#7AB8FF",
+        HomeCoursesBg2: "#0187E1",
+        HomeCoursesBg3: "#0455A5",
+        HomeCoursesBg4: "#034875",
       },
       fontFamily: {
         segoeUI: "'Segoe UI'",
@@ -24,5 +31,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("tailwindcss-border-gradients")()],
 };
