@@ -14,7 +14,7 @@
       "
     >
       <div class="absolute left-10">
-        <h1 class="text-3xl text-A2FF font-bold">kloudlab</h1>
+        <h1 class="text-3xl text-LabBtn2 font-bold">kloudlab</h1>
       </div>
       <router-link :to="{ name: 'Home' }" class="text-NavOptions font-segoeUI">
         Home
@@ -48,7 +48,7 @@
           to-NavBtn3
           px-4
           py-2
-          rounded-l-3xl rounded-r-3xl
+          rounded-3xl
           text-white
           font-bold font-segoeUI
         "
