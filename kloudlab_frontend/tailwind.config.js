@@ -1,3 +1,5 @@
+const colors = require("tailwindcss/colors");
+
 module.exports = {
   purge: ["./public/**/*.html", "./src/**/*.vue"],
   darkMode: false, // or 'media' or 'class'
@@ -21,10 +23,18 @@ module.exports = {
         HomeCoursesBg2: "#0187E1",
         HomeCoursesBg3: "#0455A5",
         HomeCoursesBg4: "#034875",
+        HomeTutorialh1: "#0678C4",
+        HomeTutorialBg: "#0088FF",
+        HomeTutorialWatch: "#0061A2",
+        HomeCloudShape1: "#5CC5FC",
+        HomeCloudShape2: "#D6EDFF",
       },
       fontFamily: {
         segoeUI: "'Segoe UI'",
         poppins: "'poppins', sans-serif",
+      },
+      borderRadius: {
+        "4xl": "44px",
       },
     },
   },

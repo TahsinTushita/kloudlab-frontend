@@ -16,3 +16,18 @@
       @apply font-segoeUI
     }
   }
+
+
+  /* .navBorderBottom {
+    position: relative;
+  }
+  
+  .navBorderBottom:after {
+    content: "";
+    background-image: linear-gradient(to right, #0177ed, #004fa0);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 70%;
+    height: 3px;
+  } */

@@ -16,13 +16,16 @@
       <div class="absolute left-10">
         <h1 class="text-3xl text-LabBtn2 font-bold">kloudlab</h1>
       </div>
-      <router-link
-        :to="{ name: 'Home' }"
-        class="text-NavOptions font-segoeUI text-xl"
-        active-class="navBorderBottom"
-      >
-        Home
-      </router-link>
+      <div class="space-y-1">
+        <router-link
+          :to="{ name: 'Home' }"
+          class="text-NavOptions font-segoeUI text-xl"
+          active-class="navBorderBottom"
+        >
+          Home
+        </router-link>
+        <div class="navBorderBottom"></div>
+      </div>
       <router-link
         :to="{ name: 'Courses' }"
         class="text-NavOptions font-segoeUI text-xl"
@@ -52,21 +55,24 @@
         >
           Sign in
         </router-link>
-        <a
-          href="#"
+        <button
           class="
-            bg-gradient-to-b
-            from-NavBtn1
-            via-NavBtn2
-            to-NavBtn3
+            bg-gradient-to-bl
+            from-blue-600
+            via-blue-600
+            to-blue-600
+            hover:from-NavBtn1 hover:via-NavBtn2
+            from-NavBtn3
             px-4
             py-2
             rounded-3xl
             text-white text-xl
             font-bold font-segoeUI
+            transition
           "
-          >Be a User
-        </a>
+        >
+          Be a User
+        </button>
       </div>
     </div>
   </nav>
@@ -86,5 +92,10 @@
   left: 0;
   width: 70%;
   height: 3px;
+  border-radius: 20%;
+}
+
+.userBtnBg {
+  background-image: linear-gradient(to right, #0177ed, #004fa0);
 }
 </style>
