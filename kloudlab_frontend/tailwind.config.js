@@ -28,6 +28,7 @@ module.exports = {
         HomeTutorialWatch: "#0061A2",
         HomeCloudShape1: "#5CC5FC",
         HomeCloudShape2: "#D6EDFF",
+        HomeBlogBg: "#F6F6F6",
       },
       fontFamily: {
         segoeUI: "'Segoe UI'",
@@ -35,11 +36,20 @@ module.exports = {
       },
       borderRadius: {
         "4xl": "44px",
+        "5xl": "200px",
+      },
+      height: {
+        550: "550px",
+      },
+      width: {
+        600: "600px",
       },
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      backgroundImage: ["hover"],
+    },
   },
   plugins: [require("tailwindcss-border-gradients")()],
 };
