@@ -448,7 +448,7 @@ export default {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: linear-gradient(to bottom, #0077ff, #00a2ff);
+  background-image: linear-gradient(45deg, #0077ff, #00a2ff);
   z-index: -1;
   transition: opacity 0.2s linear;
   opacity: 0;
@@ -472,9 +472,9 @@ export default {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: linear-gradient(to top, #0077ff, #00a2ff);
+  background-image: linear-gradient(45deg, #0077ff, #00a2ff);
   z-index: -1;
-  transition: opacity 0.5s linear;
+  transition: opacity 0.2s linear;
   opacity: 0;
   border-radius: 10px;
 }

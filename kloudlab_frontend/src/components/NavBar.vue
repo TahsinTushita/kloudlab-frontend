@@ -104,7 +104,7 @@
 
 .navBorderBottom:after {
   content: "";
-  background-image: linear-gradient(to right, #0177ed, #004fa0);
+  background-image: linear-gradient(45deg, #0177ed, #004fa0);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -122,13 +122,13 @@
 
   background-image: transparent;
 
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
   transition-property: background-size, background-position;
 }
 
 .border-button:hover {
   background-size: calc(85% - 10px) 5px;
-  background-image: linear-gradient(to right, #0177ed, #004fa0);
+  background-image: linear-gradient(45deg, #0177ed, #004fa0);
 }
 
 .userBtn {
@@ -144,7 +144,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: linear-gradient(to bottom, #007eff, #006cdc, #0052a7);
+  background-image: linear-gradient(45deg, #007eff, #006cdc, #0052a7);
   z-index: -1;
   transition: opacity 0.2s linear;
   opacity: 0;
