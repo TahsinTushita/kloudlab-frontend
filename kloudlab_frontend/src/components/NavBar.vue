@@ -1,58 +1,49 @@
 <template>
   <nav class="bg-NavBg shadow-xl">
-    <div
-      class="
-        container
-        flex
-        items-center
-        justify-center
-        pt-8
-        pb-6
-        gap-10
-        relative
-        mx-auto
-      "
-    >
-      <div class="absolute left-10">
+    <!-- <div class="container flex items-center pt-8 pb-6 relative"> -->
+    <div class="grid grid-cols-3 gap-10 pt-8 pb-6">
+      <div class="ml-28">
         <h1 class="text-3xl text-LabBtn2 font-bold">kloudlab</h1>
       </div>
-      <div class="border-button">
-        <router-link
-          :to="{ name: 'Home' }"
-          class="text-NavOptions font-segoeUI text-xl"
-          active-class="navBorderBottom"
-        >
-          Home
-        </router-link>
+      <div class="flex items-center justify-center gap-10">
+        <div class="border-button">
+          <router-link
+            :to="{ name: 'Home' }"
+            class="text-NavOptions font-segoeUI text-xl"
+            active-class="navBorderBottom"
+          >
+            Home
+          </router-link>
+        </div>
+        <div class="border-button">
+          <router-link
+            :to="{ name: 'Courses' }"
+            class="text-NavOptions font-segoeUI text-xl"
+            active-class="navBorderBottom"
+          >
+            Courses
+          </router-link>
+        </div>
+        <div class="border-button">
+          <router-link
+            :to="{ name: 'Gallery' }"
+            class="text-NavOptions font-segoeUI text-xl"
+            active-class="navBorderBottom"
+          >
+            Gallery
+          </router-link>
+        </div>
+        <div class="border-button">
+          <router-link
+            :to="{ name: 'Contact' }"
+            class="text-NavOptions font-segoeUI text-xl"
+            active-class="navBorderBottom"
+          >
+            Contact
+          </router-link>
+        </div>
       </div>
-      <div class="border-button">
-        <router-link
-          :to="{ name: 'Courses' }"
-          class="text-NavOptions font-segoeUI text-xl"
-          active-class="navBorderBottom"
-        >
-          Courses
-        </router-link>
-      </div>
-      <div class="border-button">
-        <router-link
-          :to="{ name: 'Gallery' }"
-          class="text-NavOptions font-segoeUI text-xl"
-          active-class="navBorderBottom"
-        >
-          Gallery
-        </router-link>
-      </div>
-      <div class="border-button">
-        <router-link
-          :to="{ name: 'Contact' }"
-          class="text-NavOptions font-segoeUI text-xl"
-          active-class="navBorderBottom"
-        >
-          Contact
-        </router-link>
-      </div>
-      <div class="flex absolute items-center right-0 gap-6">
+      <div class="flex items-center gap-6 absolute right-28">
         <div class="border-button">
           <router-link
             :to="{ name: 'Signin' }"

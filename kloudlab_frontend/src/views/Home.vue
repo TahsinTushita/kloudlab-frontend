@@ -142,7 +142,7 @@
               text-white
               font-poppins
               text-2xl text-light
-              getMoreBtn
+              labBtn
               px-5
               py-2
               rounded-md
@@ -259,15 +259,15 @@
   <!-- Tutorials end -->
 
   <!-- Cloud platform -->
-  <div class="p-40 py-28">
+  <div class="px-28 py-28">
     <div class="grid grid-rows-1 gap-24">
-      <div class="grid grid-cols-2">
-        <div class="space-y-16 ml-52">
+      <div class="grid grid-cols-2 gap-4">
+        <div class="space-y-16">
           <h1 class="text-HomeTutorialh1 font-poppins font-semibold text-5xl">
             Great cloud <br />
             platform since 2021
           </h1>
-          <p class="text-HomeTutorialh1 font-poppins w-4/5">
+          <p class="text-HomeTutorialh1 font-poppins">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -276,61 +276,67 @@
             remaining essentially unchanged. It was popularised in the 1960s
             with the release of Letraset sheets containing Lorem Ipsum passages,
             and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+            PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply
+            dummy text of the printing and typesetting industry.Lorem Ipsum has
+            been the industry's standard dummy text ever since the 1500s, when
+            an unknown printer took a galley of type and scrambled it to make a
+            type specimen book. Lorem Ipsum is simply dummy text of the printing
+            and typesetting industry.Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer
+            took a galley of type and scrambled it to make a type specimen book.
+            It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged.
           </p>
         </div>
-        <div class="flex items-center">
+        <div
+          class="
+            w-32
+            h-32
+            bg-HomeCloudShape1
+            z-0
+            rounded-tl-4xl
+            relative
+            ml-73
+            mt-8
+          "
+        >
           <div
             class="
-              w-24
-              h-24
-              bg-HomeCloudShape1
-              z-0
-              rounded-tl-4xl
-              relative
-              mb-52
-              ml-24
+              w-500
+              h-400
+              bg-white
+              border-2 border-transparent
+              hover:border-HomeCoursesBg1
+              z-10
+              absolute
+              top-10
+              left-10
+              shadow-xl
+              hover:shadow-2xl
             "
-          >
-            <div
-              class="
-                w-96
-                h-80
-                bg-white
-                border-2 border-transparent
-                hover:border-HomeCoursesBg1
-                z-10
-                absolute
-                top-9
-                left-9
-                shadow-lg
-              "
-            ></div>
-          </div>
+          ></div>
         </div>
       </div>
-      <div class="grid grid-cols-2">
-        <div class="ml-24">
+
+      <div class="grid grid-cols-2 gap-4">
+        <div class="relative z-0 h-650 bg-HomeCloudShape2 rounded-tr-5xl w-3/5">
           <div
-            class="relative z-0 h-550 bg-HomeCloudShape2 rounded-tr-5xl w-3/5"
-          >
-            <div
-              class="
-                w-96
-                h-80
-                bg-white
-                border-2 border-transparent
-                hover:border-HomeCoursesBg1
-                z-10
-                absolute
-                shadow-lg
-                bottom-24
-                left-32
-              "
-            ></div>
-          </div>
+            class="
+              w-500
+              h-400
+              bg-white
+              border-2 border-transparent
+              hover:border-HomeCoursesBg1
+              z-10
+              absolute
+              top-36
+              left-20
+              shadow-xl
+              hover:shadow-2xl
+            "
+          ></div>
         </div>
-        <div class="space-y-16 text-right w-3/5 mt-16 ml-14">
+        <div class="space-y-16 text-right w-4/5 ml-40 mt-12">
           <h1 class="text-HomeTutorialh1 font-poppins font-semibold text-5xl">
             How it worked
           </h1>
@@ -343,7 +349,16 @@
             remaining essentially unchanged. It was popularised in the 1960s
             with the release of Letraset sheets containing Lorem Ipsum passages,
             and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+            PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply
+            dummy text of the printing and typesetting industry.Lorem Ipsum has
+            been the industry's standard dummy text ever since the 1500s, when
+            an unknown printer took a galley of type and scrambled it to make a
+            type specimen book. Lorem Ipsum is simply dummy text of the printing
+            and typesetting industry.Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer
+            took a galley of type and scrambled it to make a type specimen book.
+            It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged.
           </p>
         </div>
       </div>
@@ -354,11 +369,11 @@
   <!-- Blog -->
   <div class="grid grid-rows-1 bg-HomeBlogBg py-28 px-28 gap-16">
     <div class="grid grid-rows-1 place-items-end">
-      <h1 class="text-6xl font-poppins font-semibold text-HomeTutorialh1 mr-12">
+      <h1 class="text-6xl font-poppins font-semibold text-HomeTutorialh1">
         Blog
       </h1>
     </div>
-    <div class="grid grid-cols-5 place-items-center">
+    <div class="grid grid-cols-5 place-items-center gap-24">
       <div v-for="blog in blogs" :key="blog.id">
         <div
           class="
@@ -398,7 +413,7 @@
           text-white
           font-poppins
           text-2xl text-light
-          getMoreBtn
+          labBtn
           px-5
           py-2
           rounded-md
@@ -456,30 +471,6 @@ export default {
 }
 
 .labBtn:hover::before {
-  opacity: 1;
-}
-
-.getMoreBtn {
-  position: relative;
-  background-color: #1e88e5;
-  z-index: 1;
-}
-
-.getMoreBtn::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: linear-gradient(45deg, #0077ff, #00a2ff);
-  z-index: -1;
-  transition: opacity 0.2s linear;
-  opacity: 0;
-  border-radius: 10px;
-}
-
-.getMoreBtn:hover::before {
   opacity: 1;
 }
 </style>
