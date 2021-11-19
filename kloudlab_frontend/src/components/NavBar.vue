@@ -11,37 +11,37 @@
         />
       </div>
       <div class="flex items-center justify-center gap-10">
-        <div class="border-button">
+        <div class="border-button py-2">
           <router-link
             :to="{ name: 'Home' }"
-            class="text-NavOptions font-segoeUI text-xl"
+            class="text-NavOptions font-segoeUI text-xl py-2"
             active-class="navBorderBottom"
           >
             Home
           </router-link>
         </div>
-        <div class="border-button">
+        <div class="border-button py-2">
           <router-link
             :to="{ name: 'Courses' }"
-            class="text-NavOptions font-segoeUI text-xl"
+            class="text-NavOptions font-segoeUI text-xl py-2"
             active-class="navBorderBottom"
           >
             Courses
           </router-link>
         </div>
-        <div class="border-button">
+        <div class="border-button py-2">
           <router-link
             :to="{ name: 'Gallery' }"
-            class="text-NavOptions font-segoeUI text-xl"
+            class="text-NavOptions font-segoeUI text-xl py-2"
             active-class="navBorderBottom"
           >
             Gallery
           </router-link>
         </div>
-        <div class="border-button">
+        <div class="border-button py-2">
           <router-link
             :to="{ name: 'Contact' }"
-            class="text-NavOptions font-segoeUI text-xl"
+            class="text-NavOptions font-segoeUI text-xl py-2"
             active-class="navBorderBottom"
           >
             Contact
@@ -49,10 +49,10 @@
         </div>
       </div>
       <div class="flex items-center gap-6 absolute right-28">
-        <div class="border-button">
+        <div class="border-button py-2">
           <router-link
             :to="{ name: 'Signin' }"
-            class="text-NavOptions font-segoeUI font-bold text-xl"
+            class="text-NavOptions font-segoeUI font-bold text-xl py-2"
             active-class="navBorderBottom 
             "
           >
@@ -127,7 +127,7 @@
 
   background-size: calc(0% - 10px) 5px;
 
-  background-position: 0px calc(110% - 0px);
+  background-position: 0px calc(105% - 0px);
 
   background-image: transparent;
 

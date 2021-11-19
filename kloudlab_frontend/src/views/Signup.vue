@@ -27,6 +27,7 @@
             justify-center
             w-96
             border-2 border-SignupGoogleSigninBorder
+            hover:border-SignupHeading
           "
         >
           <img
@@ -115,6 +116,7 @@
             w-96
             mt-10
             border-2 border-SignupBtn
+            shadow-xl
             hover:text-SignupBtn hover:bg-transparent
           "
         >
@@ -140,7 +142,7 @@ export default {
         {
           id: "email",
           label: "Email",
-          placeholder: "Email",
+          placeholder: "User email",
           name: "email",
           type: "email",
         },
