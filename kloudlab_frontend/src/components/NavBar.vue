@@ -3,7 +3,12 @@
     <!-- <div class="container flex items-center pt-8 pb-6 relative"> -->
     <div class="grid grid-cols-3 gap-10 pt-8 pb-6">
       <div class="ml-28">
-        <h1 class="text-3xl text-LabBtn2 font-bold">kloudlab</h1>
+        <!-- <h1 class="text-3xl text-LabBtn2 font-bold">kloudlab</h1> -->
+        <img
+          src=".././assets/images/kloudlab.png"
+          alt="logo"
+          class="w-48 h-12"
+        />
       </div>
       <div class="flex items-center justify-center gap-10">
         <div class="border-button">
@@ -70,7 +75,7 @@
             font-bold font-segoeUI
           "
         > -->
-        <button
+        <!-- <button
           class="
             userBtn
             text-white text-xl
@@ -81,7 +86,20 @@
           "
         >
           Be a User
-        </button>
+        </button> -->
+        <router-link
+          :to="{ name: 'Signup' }"
+          class="
+            userBtn
+            text-white text-xl
+            font-segoeUI font-bold
+            px-4
+            py-2
+            rounded-3xl
+          "
+        >
+          Be a User
+        </router-link>
       </div>
     </div>
   </nav>

@@ -29,6 +29,12 @@ module.exports = {
         HomeCloudShape1: "#5CC5FC",
         HomeCloudShape2: "#D6EDFF",
         HomeBlogBg: "#F6F6F6",
+        SignupBg1: "#A0D6FB",
+        SignupBg2: "#03A3AB",
+        SignupHeading: "#02356C",
+        SignupGoogleSignin: "#ABABAB",
+        SignupGoogleSigninBorder: "#007CFF",
+        SignupBtn: "#0090FF",
       },
       fontFamily: {
         segoeUI: "'Segoe UI'",
@@ -42,8 +48,10 @@ module.exports = {
         400: "400px",
         450: "450px",
         650: "650px",
+        850: "850px",
       },
       width: {
+        150: "150px",
         500: "500px",
         600: "600px",
       },

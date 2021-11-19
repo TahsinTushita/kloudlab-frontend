@@ -4,7 +4,13 @@
     <router-link to="/about">About</router-link>
   </div>
   <router-view /> -->
-  <NavBar />
+  <NavBar
+    :class="[
+      currentRoute == Signup && currentRoute == Signin
+        ? 'invisible'
+        : 'visible',
+    ]"
+  />
 </template>
 
 <script>
@@ -13,6 +19,17 @@ import NavBar from "./components/NavBar.vue";
 
 export default {
   components: { NavBar },
+  data() {
+    return {
+      Signup: "Signup",
+      Signin: "Signin",
+    };
+  },
+  computed: {
+    currentRoute() {
+      return this.$route.name;
+    },
+  },
 };
 </script>
 

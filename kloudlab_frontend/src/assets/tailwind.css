@@ -15,6 +15,10 @@
     .placeholder-segoeUI::placeholder{
       @apply font-segoeUI
     }
+
+    .placeholder-poppins::placeholder{
+      @apply font-poppins
+    }
   }
 
 
