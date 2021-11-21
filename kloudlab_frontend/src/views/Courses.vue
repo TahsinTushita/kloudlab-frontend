@@ -22,8 +22,8 @@
         id="categories"
       >
         <option :value="null" disabled selected>Categories</option>
-        <option>Price low-high</option>
-        <option>Price high-low</option>
+        <option>Category 1</option>
+        <option>Category 2</option>
       </select>
 
       <select
@@ -44,8 +44,8 @@
         id="topic"
       >
         <option :value="null" disabled selected>Topic</option>
-        <option>Price low-high</option>
-        <option>Price high-low</option>
+        <option>Topic 1</option>
+        <option>Topic 2</option>
       </select>
 
       <div class="w-16 h-16 bg-blue-600 relative">
@@ -59,6 +59,7 @@
             left-1/2
             transform
             -translate-x-1/2 -translate-y-1/2
+            cursor-pointer
           "
         ></i>
       </div>
