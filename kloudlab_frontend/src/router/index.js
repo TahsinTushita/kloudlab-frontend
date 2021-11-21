@@ -7,6 +7,7 @@ import Signin from "../views/Signin.vue";
 import Signup from "../views/Signup.vue";
 import Blog from "../views/Blog.vue";
 import SingleCourse from "../views/SingleCourse.vue";
+import SingleInstructor from "../views/SingleInstructor.vue";
 
 const routes = [
   {
@@ -48,6 +49,11 @@ const routes = [
     path: "/single-course",
     name: "SingleCourse",
     component: SingleCourse,
+  },
+  {
+    path: "/single-instructor",
+    name: "SingleInstructor",
+    component: SingleInstructor,
   },
   {
     path: "/about",

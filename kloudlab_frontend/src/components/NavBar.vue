@@ -91,15 +91,17 @@
         <router-link
           :to="{ name: 'Signup' }"
           class="
-            userBtn
-            text-white text-xl
-            font-segoeUI font-bold
+            mx-auto
+            text-white
+            font-poppins
+            text-xl text-light
+            labBtn
             px-4
-            py-2
-            rounded-3xl
+            py-3
+            rounded-md
           "
         >
-          Be a User
+          Become a Member
         </router-link>
       </div>
     </div>

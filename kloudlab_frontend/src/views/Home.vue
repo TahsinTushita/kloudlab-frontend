@@ -148,6 +148,7 @@
               py-2
               rounded-md
             "
+            @click="navigateToCourses"
           >
             View More
           </button>
@@ -374,40 +375,139 @@
         Blog
       </h1>
     </div>
-    <div class="grid grid-cols-5 place-items-center gap-24">
-      <div v-for="blog in blogs" :key="blog.id">
+    <!-- <div class="grid grid-cols-5 place-items-center gap-24">
+      <div v-for="blog in blogs" :key="blog.id"> -->
+    <div class="flex gap-24">
+      <div
+        class="
+          w-64
+          h-80
+          bg-white
+          rounded-md
+          shadow-lg
+          hover:shadow-2xl
+          border-2 border-transparent
+          hover:border-HomeCoursesBg1
+          relative
+        "
+      >
         <div
           class="
-            w-64
-            h-80
-            bg-white
-            rounded-md
-            shadow-lg
-            hover:shadow-2xl
-            border-2 border-transparent
-            hover:border-HomeCoursesBg1
+            w-14
+            h-14
+            rounded-full
+            bg-HomeCoursesBg1
+            absolute
+            -left-5
+            -top-5
+          "
+        ></div>
+      </div>
+      <div
+        class="
+          w-64
+          h-80
+          bg-white
+          rounded-md
+          shadow-lg
+          hover:shadow-2xl
+          border-2 border-transparent
+          hover:border-HomeCoursesBg1
+          relative
+        "
+      >
+        <div
+          class="
+            w-14
+            h-14
+            rounded-full
+            bg-HomeCoursesBg1
+            absolute
+            -bottom-7
+            left-24
+          "
+        ></div>
+      </div>
+      <div
+        class="
+          w-64
+          h-80
+          bg-white
+          rounded-md
+          shadow-lg
+          hover:shadow-2xl
+          border-2 border-transparent
+          hover:border-HomeCoursesBg1
+          relative
+        "
+      >
+        <div
+          class="
+            w-14
+            h-14
+            rounded-full
+            bg-HomeCoursesBg1
+            absolute
+            -right-5
+            -top-5
+          "
+        ></div>
+      </div>
+      <div
+        class="
+          w-64
+          h-80
+          bg-white
+          rounded-md
+          shadow-lg
+          hover:shadow-2xl
+          border-2 border-transparent
+          hover:border-HomeCoursesBg1
+          relative
+        "
+      >
+        <div
+          class="
+            w-14
+            h-14
+            rounded-full
+            bg-HomeCoursesBg1
+            absolute
+            -bottom-7
+            left-24
+          "
+        ></div>
+      </div>
+      <div
+        class="
+          w-64
+          h-80
+          bg-white
+          rounded-md
+          shadow-lg
+          hover:shadow-2xl
+          border-2 border-transparent
+          hover:border-HomeCoursesBg1
+          relative
+        "
+      >
+        <div
+          class="
+            w-14
+            h-14
+            rounded-full
+            bg-HomeCoursesBg1
+            absolute
+            -left-5
+            -top-5
           "
         ></div>
       </div>
     </div>
+
+    <!-- </div>
+    </div> -->
     <div class="flex items-center justify center">
-      <!-- <button
-        class="
-          mx-auto
-          text-white
-          font-poppins
-          text-2xl text-light
-          bg-gradient-to-tr
-          from-blue-600
-          to-blue-600
-          hover:from-LabBtn1 hover:to-LabBtn2
-          px-5
-          py-2
-          rounded-md
-        "
-      >
-        Get More
-      </button> -->
       <button
         class="
           mx-auto
@@ -419,12 +519,97 @@
           py-2
           rounded-md
         "
+        @click="navigateToBlog"
       >
         View More
       </button>
     </div>
   </div>
   <!-- Blog end -->
+
+  <!-- Instructor -->
+  <div class="px-28 py-28">
+    <h1 class="text-6xl font-poppins font-semibold text-HomeTutorialh1 mb-16">
+      Instructor
+    </h1>
+    <div class="grid grid-cols-5 place-items-center">
+      <div v-for="instructor in instructors" :key="instructor.id">
+        <div class="relative w-72 h-96">
+          <div
+            class="
+              w-12
+              h-32
+              bg-HomeInstructorCardBg
+              absolute
+              top-36
+              rounded-4xl
+              z-0
+            "
+          ></div>
+          <div
+            class="
+              w-32
+              h-12
+              bg-HomeInstructorCardBg
+              absolute
+              bottom-0
+              rounded-4xl
+              right-8
+              z-0
+            "
+          ></div>
+          <div
+            class="
+              w-60
+              h-72
+              bg-white
+              rounded-lg
+              absolute
+              z-10
+              left-4
+              top-20
+              shadow-xl
+              hover:shadow-2xl
+              border-2 border-transparent
+              hover:border-HomeCoursesBg1
+            "
+          ></div>
+          <div
+            class="
+              w-40
+              h-40
+              rounded-full
+              bg-white
+              absolute
+              z-20
+              left-14
+              shadow-xl
+            "
+          ></div>
+          <button
+            class="
+              w-24
+              h-12
+              rounded-full
+              bg-blue-600
+              absolute
+              z-20
+              left-20
+              px-4
+              py-2
+              text-white
+              bottom-10
+              text-xl
+            "
+            @click="navigateToSingleInstructor"
+          >
+            Details
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Instructor end -->
 </template>
 
 <script>
@@ -445,7 +630,20 @@ export default {
       ],
       popularCourses: [{ id: 1 }, { id: 2 }, { id: 3 }],
       blogs: [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }],
+      instructors: [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }],
     };
+  },
+
+  methods: {
+    navigateToCourses() {
+      this.$router.push("/courses");
+    },
+    navigateToBlog() {
+      this.$router.push("/blog");
+    },
+    navigateToSingleInstructor() {
+      this.$router.push("/single-instructor");
+    },
   },
 };
 </script>
