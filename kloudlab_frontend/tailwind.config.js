@@ -43,6 +43,10 @@ module.exports = {
         CourseContentContainer2: "#007AE5",
         CourseUpcomingCourses: "#038EAB",
         CourseNameBtn: "#003163",
+        SingleCoursePlaylistBg: "#F2F2F2",
+        SingleCourseShortDesc: "#023F6E",
+        SingleCourseOutlineBtn1: "#007AF7",
+        SingleCourseOutlineBtn2: "#0056AE",
       },
       fontFamily: {
         segoeUI: "'Segoe UI'",

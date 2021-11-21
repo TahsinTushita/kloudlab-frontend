@@ -10,7 +10,7 @@
     >
       <div class="space-y-5">
         <h3 class="cursor-pointer">About</h3>
-        <h3 class="cursor-pointer">Courses</h3>
+        <h3 class="cursor-pointer" @click="navigateToCourses">Courses</h3>
         <h3 class="cursor-pointer">Gallery</h3>
         <h3 class="cursor-pointer">Contact</h3>
       </div>
@@ -137,6 +137,10 @@ export default {
 
     navigateToHome() {
       this.$router.push("/");
+    },
+
+    navigateToCourses() {
+      this.$router.push("/courses");
     },
   },
 };

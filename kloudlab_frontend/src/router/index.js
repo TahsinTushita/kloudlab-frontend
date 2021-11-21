@@ -6,6 +6,7 @@ import Contact from "../views/Contact.vue";
 import Signin from "../views/Signin.vue";
 import Signup from "../views/Signup.vue";
 import Blog from "../views/Blog.vue";
+import SingleCourse from "../views/SingleCourse.vue";
 
 const routes = [
   {
@@ -42,6 +43,11 @@ const routes = [
     path: "/blog",
     name: "Blog",
     component: Blog,
+  },
+  {
+    path: "/single-course",
+    name: "SingleCourse",
+    component: SingleCourse,
   },
   {
     path: "/about",

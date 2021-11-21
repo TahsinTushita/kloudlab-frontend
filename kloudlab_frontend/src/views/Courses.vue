@@ -95,7 +95,9 @@
               absolute
               top-4
               left-4
+              cursor-pointer
             "
+            @click="navigateToSingleCoursePage"
           ></div>
         </div>
       </div>
@@ -124,7 +126,9 @@
               absolute
               bottom-4
               left-4
+              cursor-pointer
             "
+            @click="navigateToSingleCoursePage"
           ></div>
         </div>
       </div>
@@ -153,7 +157,9 @@
               absolute
               top-4
               left-4
+              cursor-pointer
             "
+            @click="navigateToSingleCoursePage"
           ></div>
         </div>
       </div>
@@ -182,7 +188,9 @@
               absolute
               bottom-4
               left-4
+              cursor-pointer
             "
+            @click="navigateToSingleCoursePage"
           ></div>
         </div>
       </div>
@@ -277,6 +285,12 @@ export default {
     return {
       courses: [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }],
     };
+  },
+
+  methods: {
+    navigateToSingleCoursePage() {
+      this.$router.push("/single-course");
+    },
   },
 };
 </script>
