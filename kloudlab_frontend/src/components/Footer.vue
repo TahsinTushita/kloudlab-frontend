@@ -118,7 +118,12 @@
           />
         </div>
       </div>
-      <img src=".././assets/images/kloudlab.png" alt="logo" class="w-48 h-12" />
+      <img
+        src=".././assets/images/kloudlab.png"
+        alt="logo"
+        class="w-48 h-12 cursor-pointer"
+        @click="navigateToHome"
+      />
     </div>
   </div>
 </template>
@@ -128,6 +133,10 @@ export default {
   methods: {
     navigateToBlog() {
       this.$router.push("/blog");
+    },
+
+    navigateToHome() {
+      this.$router.push("/");
     },
   },
 };

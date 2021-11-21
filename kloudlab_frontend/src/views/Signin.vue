@@ -101,8 +101,8 @@
             bg-SignupBtn
             rounded-4xl
             text-white
-            font-poppins font-semibold
-            text-3xl
+            font-poppins
+            text-2xl
             px-8
             py-2
             w-96

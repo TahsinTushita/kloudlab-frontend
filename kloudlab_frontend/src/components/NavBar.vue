@@ -7,7 +7,8 @@
         <img
           src=".././assets/images/kloudlab.png"
           alt="logo"
-          class="w-48 h-12"
+          class="w-48 h-12 cursor-pointer"
+          @click="navigateToHome"
         />
       </div>
       <div class="flex items-center justify-center gap-10">
@@ -105,6 +106,16 @@
   </nav>
   <router-view />
 </template>
+
+<script>
+export default {
+  methods: {
+    navigateToHome() {
+      this.$router.push("/");
+    },
+  },
+};
+</script>
 
 <style scoped>
 .navBorderBottom {

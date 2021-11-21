@@ -38,6 +38,11 @@ module.exports = {
         FooterBg: "#00173E",
         FooterNewsletter: "#00D3FF",
         BlogSideBorder: "#008BBF",
+        CoursesFilter: "#B5B5B5",
+        CourseContentContainer1: "#004785",
+        CourseContentContainer2: "#007AE5",
+        CourseUpcomingCourses: "#038EAB",
+        CourseNameBtn: "#003163",
       },
       fontFamily: {
         segoeUI: "'Segoe UI'",

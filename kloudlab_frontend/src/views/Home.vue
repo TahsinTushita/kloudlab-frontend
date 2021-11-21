@@ -10,6 +10,7 @@
             border border-HomeSearchInputBorder
             px-12
             py-3
+            h-16
             rounded-4xl
             focus:outline-none focus:ring-2
             placeholder-segoeUI placeholder-SeachCoursePlaceholder
@@ -20,7 +21,7 @@
           class="
             absolute
             right-4
-            top-3
+            top-5
             text-lg text-transparent
             bg-clip-text bg-gradient-to-b
             from-HomeSearchIcon1
@@ -148,7 +149,7 @@
               rounded-md
             "
           >
-            Get More
+            View More
           </button>
         </div>
       </div>
@@ -419,7 +420,7 @@
           rounded-md
         "
       >
-        Get More
+        View More
       </button>
     </div>
   </div>
