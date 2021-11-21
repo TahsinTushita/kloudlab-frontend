@@ -50,7 +50,7 @@
       </h1>
     </div>
 
-    <div class="space-y-4 relative">
+    <div class="space-y-4">
       <p class="text-HomeTutorialh1 text-lg">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry.Lorem Ipsum has been the industry's standard dummy text ever
@@ -75,8 +75,6 @@
           text-BlogSideBorder text-3xl
           font-poppins font-semibold
           cursor-pointer
-          absolute
-          right-0
         "
       >
         Read More...

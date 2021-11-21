@@ -47,6 +47,7 @@ module.exports = {
         SingleCourseShortDesc: "#023F6E",
         SingleCourseOutlineBtn1: "#007AF7",
         SingleCourseOutlineBtn2: "#0056AE",
+        SingleCoursePlaylistTitle: "#828282",
       },
       fontFamily: {
         segoeUI: "'Segoe UI'",
