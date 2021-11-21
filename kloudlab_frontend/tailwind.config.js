@@ -35,6 +35,9 @@ module.exports = {
         SignupGoogleSignin: "#ABABAB",
         SignupGoogleSigninBorder: "#007CFF",
         SignupBtn: "#0090FF",
+        FooterBg: "#00173E",
+        FooterNewsletter: "#00D3FF",
+        BlogSideBorder: "#008BBF",
       },
       fontFamily: {
         segoeUI: "'Segoe UI'",
@@ -47,6 +50,9 @@ module.exports = {
       height: {
         400: "400px",
         450: "450px",
+        500: "500px",
+        600: "600px",
+        605: "610px",
         650: "650px",
         850: "850px",
       },

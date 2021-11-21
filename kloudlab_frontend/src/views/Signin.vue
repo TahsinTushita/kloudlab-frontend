@@ -110,6 +110,8 @@
             border-2 border-SignupBtn
             shadow-xl
             hover:text-SignupBtn hover:bg-transparent
+            transition
+            duration-300
           "
         >
           Login

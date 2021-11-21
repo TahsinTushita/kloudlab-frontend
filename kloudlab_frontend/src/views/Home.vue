@@ -449,7 +449,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style >
 .labBtn {
   position: relative;
   background-color: #1e88e5;
