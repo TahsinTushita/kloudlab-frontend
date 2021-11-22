@@ -8,6 +8,7 @@ import Signup from "../views/Signup.vue";
 import Blog from "../views/Blog.vue";
 import SingleCourse from "../views/SingleCourse.vue";
 import SingleInstructor from "../views/SingleInstructor.vue";
+import SingleVideo from "../views/SingleVideo.vue";
 
 const routes = [
   {
@@ -54,6 +55,11 @@ const routes = [
     path: "/single-instructor",
     name: "SingleInstructor",
     component: SingleInstructor,
+  },
+  {
+    path: "/single-video",
+    name: "SingleVideo",
+    component: SingleVideo,
   },
   {
     path: "/about",

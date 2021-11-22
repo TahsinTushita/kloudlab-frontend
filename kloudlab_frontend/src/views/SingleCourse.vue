@@ -103,6 +103,7 @@
               hover:border-HomeCoursesBg1
               cursor-pointer
             "
+            @click="navigateToSingleVideo"
           ></div>
           <div class="flex items-center">
             <div class="text-SingleCoursePlaylistTitle font-poppins">
@@ -122,6 +123,12 @@ export default {
     return {
       CourseItems: [{ id: 1 }, { id: 2 }, { id: 3 }],
     };
+  },
+
+  methods: {
+    navigateToSingleVideo() {
+      this.$router.push("/single-video");
+    },
   },
 };
 </script>

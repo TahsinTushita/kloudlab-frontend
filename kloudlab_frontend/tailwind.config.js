@@ -51,6 +51,8 @@ module.exports = {
         HomeInstructorCardBg: "#C3EAFB",
         SingleInstructorPhotoBorder: "#2078FE",
         SingleInstructorPhotoBottomLine: "#C5F1FF",
+        SingleVideoRecommendedCoursesHeader: "#01326A",
+        SingleVideoRecommendedCoursesSelectorBg: "#01426D",
       },
       fontFamily: {
         segoeUI: "'Segoe UI'",
