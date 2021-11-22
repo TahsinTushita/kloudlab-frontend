@@ -53,6 +53,8 @@
                 px-4
                 py-2
                 focus:text-white
+                hover:text-white
+                hover:bg-SingleVideoRecommendedCoursesSelectorBg
                 text-2xl
                 rounded-full
               "
@@ -98,7 +100,7 @@
         </div>
         <div class="col-span-2 h-850">
           <div class="h-5/6 py-10 px-5 bg-SingleCoursePlaylistBg">
-            <div class="flex justify-center mb-14">
+            <div class="flex justify-center mb-10">
               <h1
                 class="
                   text-3xl
@@ -121,7 +123,6 @@
                     hover:border-HomeCoursesBg1
                     cursor-pointer
                   "
-                  @click="navigateToSingleVideo"
                 ></div>
               </div>
             </div>

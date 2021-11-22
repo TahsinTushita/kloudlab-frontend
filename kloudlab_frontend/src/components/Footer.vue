@@ -11,8 +11,8 @@
       <div class="space-y-5">
         <h3 class="cursor-pointer">About</h3>
         <h3 class="cursor-pointer" @click="navigateToCourses">Courses</h3>
-        <h3 class="cursor-pointer">Gallery</h3>
-        <h3 class="cursor-pointer">Contact</h3>
+        <h3 class="cursor-pointer" @click="navigateToGallery">Gallery</h3>
+        <h3 class="cursor-pointer" @click="navigateToContact">Contact</h3>
       </div>
       <div class="space-y-5">
         <h3 class="cursor-pointer">Documentation</h3>
@@ -146,6 +146,14 @@ export default {
 
     navigateToLab() {
       this.$router.push("/lab");
+    },
+
+    navigateToGallery() {
+      this.$router.push("/gallery");
+    },
+
+    navigateToContact() {
+      this.$router.push("/contact");
     },
   },
 };
