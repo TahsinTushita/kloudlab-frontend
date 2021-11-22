@@ -49,6 +49,8 @@ module.exports = {
         SingleCourseOutlineBtn2: "#0056AE",
         SingleCoursePlaylistTitle: "#828282",
         HomeInstructorCardBg: "#C3EAFB",
+        SingleInstructorPhotoBorder: "#2078FE",
+        SingleInstructorPhotoBottomLine: "#C5F1FF",
       },
       fontFamily: {
         segoeUI: "'Segoe UI'",
@@ -74,6 +76,9 @@ module.exports = {
       },
       margin: {
         73: "18.2rem",
+      },
+      borderWidth: {
+        10: "10px",
       },
     },
   },

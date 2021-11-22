@@ -375,6 +375,13 @@
         Blog
       </h1>
     </div>
+    <!-- <div class="grid grid-cols-5 place-items-center">
+      <div v-for="(blog, index) in blogs" :key="blog.id">
+        <h1 v-if="5 % (3 + index) == 2">Hello 1</h1>
+        <h1 v-if="5 % (3 + index) == 1">Hello 2</h1>
+        <h1 v-if="5 % (3 + index) == 0">Hello 3</h1>
+      </div>
+    </div> -->
     <!-- <div class="grid grid-cols-5 place-items-center gap-24">
       <div v-for="blog in blogs" :key="blog.id"> -->
     <div class="flex gap-24">
@@ -532,7 +539,7 @@
     <h1 class="text-6xl font-poppins font-semibold text-HomeTutorialh1 mb-16">
       Instructor
     </h1>
-    <div class="grid grid-cols-5 place-items-center">
+    <div class="grid grid-cols-4 place-items-center">
       <div v-for="instructor in instructors" :key="instructor.id">
         <div class="relative w-72 h-96">
           <div
@@ -630,7 +637,7 @@ export default {
       ],
       popularCourses: [{ id: 1 }, { id: 2 }, { id: 3 }],
       blogs: [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }],
-      instructors: [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }],
+      instructors: [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }],
     };
   },
 
