@@ -40,6 +40,7 @@
           rounded-md
           ml-0
         "
+        @click="navigateToLab"
       >
         Lab
       </button>
@@ -78,12 +79,12 @@
               right-0
               text-white
               font-poppins
-              text-3xl
+              text-2xl
               font-light
               bg-blue-500
               hover:bg-blue-600
-              px-6
-              py-3
+              px-8
+              py-4
               rounded-full
               transition
               duration-500
@@ -141,6 +142,10 @@ export default {
 
     navigateToCourses() {
       this.$router.push("/courses");
+    },
+
+    navigateToLab() {
+      this.$router.push("/lab");
     },
   },
 };

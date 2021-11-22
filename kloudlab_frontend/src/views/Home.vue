@@ -58,6 +58,7 @@
             font-semibold
             rounded-lg
           "
+          @click="navigateToLab"
         >
           Lab
         </button>
@@ -650,6 +651,10 @@ export default {
     },
     navigateToSingleInstructor() {
       this.$router.push("/single-instructor");
+    },
+
+    navigateToLab() {
+      this.$router.push("/lab");
     },
   },
 };

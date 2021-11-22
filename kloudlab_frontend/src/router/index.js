@@ -9,6 +9,7 @@ import Blog from "../views/Blog.vue";
 import SingleCourse from "../views/SingleCourse.vue";
 import SingleInstructor from "../views/SingleInstructor.vue";
 import SingleVideo from "../views/SingleVideo.vue";
+import Lab from "../views/Lab.vue";
 
 const routes = [
   {
@@ -60,6 +61,11 @@ const routes = [
     path: "/single-video",
     name: "SingleVideo",
     component: SingleVideo,
+  },
+  {
+    path: "/lab",
+    name: "Lab",
+    component: Lab,
   },
   {
     path: "/about",

@@ -53,6 +53,7 @@ module.exports = {
         SingleInstructorPhotoBottomLine: "#C5F1FF",
         SingleVideoRecommendedCoursesHeader: "#01326A",
         SingleVideoRecommendedCoursesSelectorBg: "#01426D",
+        LabPopup: "#E3E3E3",
       },
       fontFamily: {
         segoeUI: "'Segoe UI'",
